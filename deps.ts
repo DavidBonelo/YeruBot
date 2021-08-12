@@ -6,3 +6,5 @@ export {
   Player,
 } from "https://raw.githubusercontent.com/discordeno/lavadeno/master/mod.ts";
 export type { Track } from "https://raw.githubusercontent.com/discordeno/lavadeno/master/mod.ts";
+
+export { config } from "https://deno.land/x/dotenv@v3.0.0/mod.ts";
