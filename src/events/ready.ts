@@ -9,10 +9,10 @@ import { log } from "../utils/logger.ts";
 
 bot.eventHandlers.ready = async function () {
   editBotStatus({
-    status: "dnd",
+    status: "online",
     activities: [
       {
-        name: "Discordeno Best Lib",
+        name: "👉-help",
         type: DiscordActivityTypes.Game,
         createdAt: Date.now(),
       },
