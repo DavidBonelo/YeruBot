@@ -2,12 +2,12 @@ import { Milliseconds } from "../utils/constants/time.ts";
 import { botId, cache, cacheHandlers } from "../../deps.ts";
 import { bot } from "../../cache.ts";
 
-const MESSAGE_LIFETIME = Milliseconds.MINUTE * 10;
-const MEMBER_LIFETIME = Milliseconds.MINUTE * 30;
+const MESSAGE_LIFETIME = Milliseconds.MINUTE * 20;
+const MEMBER_LIFETIME = Milliseconds.MINUTE * 60;
 
 bot.tasks.set(`sweeper`, {
   name: `sweeper`,
-  interval: Milliseconds.MINUTE * 5,
+  interval: Milliseconds.MINUTE * 20,
   execute: function () {
     const now = Date.now();
     // Delete presences from the bots cache.

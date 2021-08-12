@@ -5,7 +5,7 @@ import { Milliseconds } from "../utils/constants/time.ts";
 bot.tasks.set(`collectors`, {
   name: `collectors`,
   // Runs this function once a minute
-  interval: Milliseconds.MINUTE,
+  interval: Milliseconds.MINUTE * 10,
   execute: function () {
     const now = Date.now();
 
